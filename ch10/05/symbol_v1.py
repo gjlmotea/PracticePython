@@ -13,10 +13,12 @@ symbol_dict={
 '9':['9999','9  9','9999','   9','9999'],
 '+':['    ','  + ',' +++','  + ','    '],
 '-':['    ','    ',' ---','    ','    '],
-'x':['    ',' x x','  x ',' x x','    '],
+'*':['*  *',' ** ','****',' ** ','*  *'],
 '/':['    ','   /','  / ',' /  ','/   '],
 '=':['    ',' ===','    ',' ===','    ']
 }
+
+## 將乘法x改成*字號
 
 def print_symbol(symbol_dict):
     
@@ -34,7 +36,7 @@ print(print_symbol(symbol_dict['8']))
 print(print_symbol(symbol_dict['9']))
 print(print_symbol(symbol_dict['+']))
 print(print_symbol(symbol_dict['-']))
-print(print_symbol(symbol_dict['x']))
+print(print_symbol(symbol_dict['*']))
 print(print_symbol(symbol_dict['/']))
 print(print_symbol(symbol_dict['=']))
 

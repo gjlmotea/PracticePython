@@ -29,5 +29,6 @@ count = 9
 while count > 0:
     print(*star_matrix[count-1],sep=' ')
     count = count -1
-
-
+    ## 顛倒著印，先印最後一行
+    ## 印出陣列時不要有[ , ,]框框之類的，我搜尋了 python print list without brackets
+    ## https://stackoverflow.com/questions/11178061/print-list-without-brackets-in-a-single-row

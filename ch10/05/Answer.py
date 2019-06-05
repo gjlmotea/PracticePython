@@ -42,6 +42,7 @@ for symbol in operation:
         while len(operation_list) > 0:
             second_num = second_num * 10 + int(operation_list.pop(0))
 
+## 根據加減乘除的符號做運算
 if operation_symbol == '+':
     answer_num = first_num + second_num
 if operation_symbol == '-':
@@ -50,6 +51,8 @@ if operation_symbol == '*':
     answer_num = first_num * second_num
 if operation_symbol == '/':
     answer_num = first_num / second_num
+    
+
 
 print(first_num, operation_symbol, second_num, '=', answer_num)
 

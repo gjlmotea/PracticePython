@@ -15,12 +15,6 @@ symbol_dict={
 input_digit = input("請輸入0~9: \n")
 print("\n\n\n")
 
-digit_symbol_list_0 = []
-digit_symbol_list_1 = []
-digit_symbol_list_2 = []
-digit_symbol_list_3 = []
-digit_symbol_list_4 = []
-
 for i in range(int(input_digit)):
     for j in range(int(input_digit)):
         print(symbol_dict [str(input_digit)] [0], sep='')

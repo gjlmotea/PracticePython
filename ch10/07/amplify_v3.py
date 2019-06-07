@@ -18,7 +18,7 @@ print("\n\n\n")
 
 
 
-for term in range(int(input_digit)):
+for term in range(int(input_digit)+1):
     for i in range(5):
         for line_amplify in range(term):
             for j in range(4):  

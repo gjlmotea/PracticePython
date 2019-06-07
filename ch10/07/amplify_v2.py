@@ -17,9 +17,11 @@ print("\n\n\n")
 
 
 
-for i in range(5):
-    for l in range(int(input_digit)):
-        for j in range(4):
-            for k in range(int(input_digit)):
+for i in range(5): # 一個符號的五行
+    for line_multiple in range(int(input_digit)):
+        for j in range(4):  #每行
+            for char_multiple in range(int(input_digit)):   # 每四個字元
                 print(symbol_dict [str(input_digit)] [i][j], end='')
+                #一次印一個字元出來
         print()
+ 

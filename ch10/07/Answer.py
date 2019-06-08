@@ -27,13 +27,16 @@ matrix = [[' ' for i in range ((width + input_digit)* 4)] for i in range(input_d
 intent = 0
 for term in range(1,input_digit+1):    ## 幾倍大
     intent = intent + (term-1)
-    intent = intent + 1
+    intent = intent + 1  ## +1的空行是排版用
     for i in range(5):               ## 一個符號被初始的五行高
         for line_amplify in range(term):    ## 一行高的放大倍率
             for j in range(4):       ## 一個符號被初始的四字寬
                 for char_amplify in range(term):    ## 一個字元放大的倍率
                     
-                    matrix[i*term + line_amplify] [(intent)*4 + j*term + char_amplify] = symbol_dict [str(input_digit)] [i][j]
+                    ##matrix[i*term + line_amplify] [(intent)*4 + j*term + char_amplify] = symbol_dict [str(input_digit)] [i][j]                            ##留這行靠上對齊
+                    matrix[(input_digit-term) * 5 + (i*term + line_amplify) ] [(intent)*4 + j*term + char_amplify] = symbol_dict [str(input_digit)] [i][j]  ##留這行 靠下對齊
+                    
 
 for row in matrix:
     print(*row, sep='')
+

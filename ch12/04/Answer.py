@@ -19,9 +19,14 @@ class Date():
 input_Y = input("欲設定日期，\n請輸入年:\n")
 input_M = input("請輸入月份:\n")
 input_D = input("請輸入日期:\n")
-
+print()
 
 YMD = Date()
 YMD.set_value(input_Y, input_M, input_D)
-for element in YMD.GetDate():
-    print(element)
+date = YMD.GetDate()
+
+for i in range(len(date)):
+    if i == len(date)-1:
+        print(date[i])
+    else:
+        print(date[i], end='/')

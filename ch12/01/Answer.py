@@ -24,3 +24,4 @@ class math():
 N = int(input("請輸入數字N，將做連加、連乘到數字N:\n"))
 print(" =",math.add(N))
 print(" =",math.mul(N))
+

@@ -17,4 +17,5 @@ for i in range(6):
     choice = random.choice(tuple(pokers))
     print(choice)
     pokers.remove(choice)
+    #選中後，將該選項移出set，以免重複選取
 

@@ -8,7 +8,7 @@ b = input("請輸入b的值:\n")
 operation = Calculator(a, b, op)
 
 print(operation.result)
-
+print()
 
 print("運算2:")
 a2 = input("請輸入a的值:\n")

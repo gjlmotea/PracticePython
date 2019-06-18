@@ -1,5 +1,3 @@
-import math
-
 class CTime():
 
     def __init__(self):
